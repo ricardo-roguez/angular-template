@@ -6,6 +6,8 @@ import { AppConfigUrlInterface } from '../interfaces/app-config-url.interface';
 })
 export class ConfigService {
   public url: AppConfigUrlInterface = {
-    api: ''
+    apiUrl: ''
   }
+
+  public defaultLang: string = 'es-ES';
 }

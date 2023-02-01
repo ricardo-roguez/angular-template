@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ButtonModule } from 'primeng/button';
 
 import { Error401Component } from './error401.component';
+import { TranslateModule } from "@ngx-translate/core";
 
 describe('Error401Component', () => {
   let component: Error401Component;
@@ -9,7 +9,7 @@ describe('Error401Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonModule],
+      imports: [TranslateModule.forRoot()],
       declarations: [ Error401Component ],
     })
     .compileComponents();
@@ -27,5 +27,4 @@ describe('Error401Component', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('p')).toBeDefined();
   });
-
 });

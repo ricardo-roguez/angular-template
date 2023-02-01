@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { TranslateModule } from '@ngx-translate/core';
 import { FunctionalityOneMainComponent } from './components/functionality-one/functionality-one-main.component';
 import { FunctionalityOneRoutingModule } from './functionality-one-routing.module';
 
@@ -8,12 +8,10 @@ import { FunctionalityOneRoutingModule } from './functionality-one-routing.modul
   declarations: [
     FunctionalityOneMainComponent
   ],
-  imports: [
-    CommonModule,
-    FunctionalityOneRoutingModule,
-
-    // NgPrime
-    ButtonModule
-  ]
+    imports: [
+      CommonModule,
+      FunctionalityOneRoutingModule,
+      TranslateModule
+    ]
 })
 export class FunctionalityOneModule { }
